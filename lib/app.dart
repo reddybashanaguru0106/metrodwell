@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:metro_dwell/assessments/assessment.dart';
-import 'package:metro_dwell/assets/asset.dart';
+// import 'package:metro_dwell/assessments/assessment.dart';
+import 'package:metro_dwell/assessments/listPage.dart';
+// import 'package:metro_dwell/assets/asset.dart';
+import 'package:metro_dwell/assets/listPage.dart';
 import 'package:metro_dwell/dashboard/dashboardPage.dart';
 
 const Color darkBlue = Color.fromARGB(255, 1, 124, 255);
@@ -46,10 +48,10 @@ class _BottomNavigationBarExampleState
   int _selectedIndex = 0;
   // static const TextStyle optionStyle =
   //     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    DashboardPage(),
-    Asset(),
-    Assessment()
+  static final List<Widget> _widgetOptions = <Widget>[
+    const DashboardPage(),
+    AssetListPage(),
+    AssessmentListPage()
   ];
 
   void _onItemTapped(int index) {
